@@ -9,14 +9,35 @@ body:before {
     position: absolute;
     width: 100%;
     height: 100%;
-    background: url("../images/dot.png") repeat;
 	z-index: -1;
+}
+.fp-viewing-0 {
+
+	background: url("../images/background.jpg") center top no-repeat;
+	background-size: cover;
+	transition: 1s;
+}
+.fp-viewing-1 {
+	background: url("../images/background.jpg") center 25%;
+	background-size: cover;
+	transition: 1s;
+}
+.fp-viewing-2 {
+	background: url("../images/background.jpg") center 50%;
+	background-size: cover;
+	transition: 1s;
+}
+.fp-viewing-3 {
+	background: url("../images/background.jpg") center 75%;
+	background-size: cover;
+	transition: 1s;
 }
 .fp-viewing-0 .main {
 	opacity: 1;
 	transition: 1s;
 }
 .fp-viewing-1 .main {
+	background-position: -100%;
 	transition: 0.25s ease-out;
 	filter: blur(50px);
 	opacity: 0;
@@ -76,11 +97,13 @@ body:before {
 	transition: 1s;
 }
 .abouttext {
-	width: 30%;
+	width: 50%;
 	font-size: 20px;
 	margin: auto;
 	filter: blur(20px);
 	color: #fff;
+	padding: 10px;
+	background-color: rgba(0, 0, 0, 0.2);
 	margin-top: 100px;
 	opacity: 0;
 	text-shadow: 2px 2px 2px black;
@@ -100,7 +123,6 @@ body:before {
 .avatar {
 	border-radius: 99999px;
 	border: 12px solid #fff;
-	background-color: black;
 	box-shadow: 5px 5px 5px black;
 	animation: avatarRoll 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1;
 }
@@ -110,8 +132,8 @@ body:before {
 .name {
 	display: inline-block;
 	vertical-align: middle;
-	line-height: 0.3;
 	font-size: 10em;
+	line-height: 0.3;
 	padding-left: 30px;
 	color: #7ed8f2;
 	animation: nameSlide 4s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1;
@@ -227,4 +249,13 @@ body:before {
 	line-height: initial;
 	color: grey;
 	font-size: 1vw;
+}
+a {
+	color:#7ed8f2;
+	transition: 0.25s;
+}
+a:hover {
+	text-decoration: none;
+	color: #22bfeb;
+	transform: 0.25s;
 }
