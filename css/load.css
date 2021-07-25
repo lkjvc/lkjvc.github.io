@@ -52,7 +52,7 @@ body:before {
 }
 .avatar {
 	border-radius: 99999px;
-	border: 12px solid #7ed8f2;
+	border: 12px solid #fff;
 	background-color: black;
 	box-shadow: 5px 5px 5px black;
 	animation: avatarRoll 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1;
