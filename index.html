@@ -4,14 +4,14 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-<meta name="author" content="Luka Jović">
+<meta name="author" content="Luka Jović | Portfolio">
 <meta name="keywords" content="portfolio, web, developer, luka, jovic">
 <meta name="description" content="This is the website that represents the portfolio of Luka Jović.">
 <meta name="language" content="English, Serbian">
-<meta name="copyright" content="Luka Jović - 2021">
+<meta name="copyright" content="Luka Jović - 2019">
 
 <title>Luka Jović</title>
-<link rel="icon" type="favicon" href="images/avatarn.PNG">
+<link rel="icon" type="favicon" href="images/avatart.png">
 
 <meta name="Googlebot" content="index, follow">
 <meta name="revisit-after" content="3">
@@ -23,7 +23,7 @@
 <meta property="og:description" content="This is the website that represents the portfolio of Luka Jović.">
 <meta property="og:image" content="images/logo.png">
 <meta property="og:title" content="Luka Jović | Portfolio">
-<meta property="og:url" content="https://lkjvc.github.io">
+<meta property="og:url" content="http://jovic.online">
 
 <meta name="theme-color" content="#000000">
 <meta name="msapplication-navbutton-color" content="#000000">
@@ -32,7 +32,16 @@
 
 
 <link rel="stylesheet" type="text/css" href="fp.scr.css" />
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript" src="fp.scr.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('#fullpage').fullpage({
+			navigation: false,
+			scrollingSpeed: 1000,
+		});
+	});
+</script>
 
 <link href="css/bootstrap.min.css" rel="stylesheet" />
 <link href="css/flags.css" rel="stylesheet" />
@@ -46,7 +55,7 @@
 	<div id="fullpage">
 		<div class="section">
 			<div class="main">
-				<img src="images/avatarnc.png" class="avatar">
+				<img src="images/avatart.png" class="avatar">
 				<div class="name">
 					Luka Jović
 					<br>
@@ -59,7 +68,7 @@
 		<div class="section">
 			<div class="about">
 				<div class="navbar">
-					<img src="images/avatarn.png" class="navavatar">
+					<img src="images/avatart.png" class="navavatar">
 					<span class="navname">
 						Luka Jović
 					</span>
