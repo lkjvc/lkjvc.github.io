@@ -11,6 +11,7 @@
 <meta name="copyright" content="Luka Jović - 2019">
 
 <title>Luka Jović</title>
+<link rel="icon" type="favicon" href="images/avatart.png">
 
 <meta name="Googlebot" content="index, follow">
 <meta name="revisit-after" content="3">
@@ -29,191 +30,94 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
+
+<link rel="stylesheet" type="text/css" href="fp.scr.css" />
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript" src="fp.scr.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('#fullpage').fullpage({
+			navigation: false,
+			scrollingSpeed: 1000,
+		});
+	});
+</script>
+
 <link href="css/bootstrap.min.css" rel="stylesheet" />
 <link href="css/flags.css" rel="stylesheet" />
 <link href="css/animate.css" rel="stylesheet" />
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link href="css/styles.css" rel="stylesheet">
+<link href="https://www.w3schools.com/w3css/4/w3.css" rel="stylesheet" />
+<link href="css/load.css" rel="stylesheet" />
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-<!--link rel="shortcut icon" href="images/fav.png" /-->
-<!--[if lt IE 9]>
-  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-<![endif]-->
 </head>
+
 <body>
-<div id="wholebodyimage" class="animated delay-1s">
-
-<nav class="animated delay-1s fadeInLeft navbar w3-text-white">
-  <div class="container">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-    </div>
-
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li><a href="#"id="about">About Me</a></li>
-        <li><a href="#" id="work">Work</a></li>
-        <li><a href="#" id="contact">Contact</a></li>
-        <li class="dropdown">
-          <a href="#" id="extra" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Extra <i class="fas fa-caret-down"></i></a>
-          <ul class="dropdown-menu">
-            <li><a href="#" id="contactMe">Contact Me</a></li>
-            <li><a href="#" id="downloadCV">Download CV</a></li>
-          </ul>
-        </li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li class="nav-item dropdown">
-                <a class="dropdown-toggle" href="https://flag-sprites.com" id="lang1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="flag flag-us"> </span> English <i class="fas fa-caret-down"></i></a>
-                <ul class="dropdown-menu">
-                    <li><a href="#rs" id="lang2" data-reload><span class="flag flag-rs"> </span>  Srpski</a></li>
-                </ul>
-            </li>
-    </div>
-  </div>
-</nav>
-
-<div class="main w3-container">
-	<img src="images/lukajovicb.png" class="animated delay-2s jackInTheBox logo a-wrapper">
-	<div class="animated delay-1s fadeInRight aboutme w3-padding-large w3-black w3-row-padding">
-		<span class="w3-half" id="aboutmeh"> About Me</span><br>
-		<span class="w3-half focus-in-contract" id="aboutmet">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-		Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-		Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</span>
-	</div>
-	<div class="pre-work">
-	
-	</div>
-	<div class="work w3-padding-large w3-black">
-		<h1 id="skill">My Skills<h1>
-		<div class="skills w3-row-padding">
-			<div class="w3-col w3-quarter">	
-				<div class="progressbar-wrapper">
-						<h3 class="skillname frontend">Front-End Web Development</h3>
-						<div class="progressbar">
-							<div class="side front">
-								<div class="bar frontend"></div>
-								<div class="bar frontend"></div>
-								<div class="bar frontend"></div>
-							</div>
-							<div class="side back">
-								<div class="bar frontend"></div>
-								<div class="bar frontend"></div>
-								<div class="bar frontend"></div>
-							</div>
-							<div class="side top">
-								<div class="bar frontend"></div>
-								<div class="bar frontend"></div>
-								<div class="bar frontend"></div>
-							</div>
-							<div class="side bottom">
-								<div class="bar frontend"></div>
-								<div class="bar frontend"></div>
-								<div class="bar frontend"></div>
-							</div>
-							<div class="side left"></div>
-								<div class="bar frontend"></div>
-								<div class="bar frontend"></div>
-								<div class="bar frontend"></div>
-						</div>
-						<h3 class="skillnamelevel frontend">Advanced</h3>
-				   </div>
-			</div>
-			<div class="w3-col w3-quarter">
-				<div class="progressbar-wrapper">
-						<h3 class="skillname backend">Back-End Web Development</h3>
-						<div class="progressbar">
-							<div class="side front">
-								<div class="bar backend"></div>
-								<div class="bar backend"></div>
-							</div>
-							<div class="side back">
-								<div class="bar backend"></div>
-								<div class="bar backend"></div>
-							</div>
-							<div class="side top">
-								<div class="bar backend"></div>
-								<div class="bar backend"></div>
-							</div>
-							<div class="side bottom">
-								<div class="bar backend"></div>
-								<div class="bar backend"></div>
-							</div>
-							<div class="side left"></div>
-						</div>
-						<h3 class="skillnamelevel backend">Intermediate</h3>
-				   </div>
-			</div>
-			<div class="w3-col w3-quarter">
-				<div class="progressbar-wrapper">
-						<h3 class="skillname photoshop">Photoshop</h3>
-						<div class="progressbar">
-							<div class="side front">
-								<div class="bar photoshop"></div>
-								<div class="bar photoshop"></div>
-								<div class="bar photoshop"></div>
-							</div>
-							<div class="side back">
-								<div class="bar photoshop"></div>
-								<div class="bar photoshop"></div>
-								<div class="bar photoshop"></div>
-							</div>
-							<div class="side top">
-								<div class="bar photoshop"></div>
-								<div class="bar photoshop"></div>
-								<div class="bar photoshop"></div>
-							</div>
-							<div class="side bottom">
-								<div class="bar photoshop"></div>
-								<div class="bar photoshop"></div>
-								<div class="bar photoshop"></div>
-							</div>
-							<div class="side left"></div>
-						</div>
-						<h3 class="skillnamelevel photoshop">Advanced</h3>
-				   </div>
-			</div>
-			<div class="w3-col w3-quarter">
-				<div class="progressbar-wrapper">
-						<h3 class="skillname postproduction">Post-Production</h3>
-						<div class="progressbar">
-							<div class="side front">
-								<div class="bar postproduction"></div>
-							</div>
-							<div class="side back">
-								<div class="bar postproduction"></div>
-							</div>
-							<div class="side top">
-								<div class="bar postproduction"></div>
-							</div>
-							<div class="side bottom">
-								<div class="bar postproduction"></div>
-							</div>
-							<div class="side left"></div>
-						</div>
-						<h3 class="skillnamelevel postproduction">Beginner</h3>
-				   </div>
+	<div id="fullpage">
+		<div class="section">
+			<div class="main">
+				<img src="images/avatart.png" class="avatar">
+				<div class="name">
+					Luka Jović
+					<br>
+					<span class="description">
+						Web Designer & Developer
+					</span>
+				</div>
 			</div>
 		</div>
+		<div class="section">
+			<div class="about">
+				<div class="navbar">
+					<img src="images/avatart.png" class="navavatar">
+					<span class="navname">
+						Luka Jović
+					</span>
+				</div>
+				<span class="aboutheader">About Me</span>
+				<p class="abouttext">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+			</div>
+		</div>
+		<div class="section">
+			<div class="whatido">
+				<div class="navbar1">
+					<img src="images/avatart.png" class="navavatar1">
+					<span class="navname1">
+						Luka Jović
+					</span>
+				</div>
+				<span class="whatidoheader text-focus-in">What I Do</span>
+				<div class="w3-row-padding">
+					<div class="w3-col l3 m3">
+						<div class="card">
+							<img src="images/wid1icon.png" class="wid1icon"><br>
+							<span class="w3-xlarge">Design</span>
+							<p>something about this something about this something about this something about this something about this something about this something about this something about this </p>
+						</div>
+					</div>
+					<div class="w3-col l3 m3">
+						<div class="card">
+							<img src="images/wid2icon.png" class="wid2icon"><br>
+							<span class="w3-xlarge">Development / Programming</span>
+							<p>something about this something about this something about this something about this something about this something about this something about this something about this </p>
+						</div>
+					</div>
+					<div class="w3-col l3 m3">
+						<div class="card">
+							<img src="images/wid3icon.png" class="wid3icon"><br>
+							<span class="w3-xlarge">Photo Manipulation</span>
+							<p>something about this something about this something about this something about this something about this something about this something about this something about this </p>
+						</div>
+					</div>
+					<div class="w3-col l3 m3">
+						<div class="card">
+							<img src="images/wid4icon.png" class="wid4icon"><br>
+							<span class="w3-xlarge">Post Production</span>
+							<p>something about this something about this something about this something about this something about this something about this something about this something about this </p>
+						</div>
+					</div>
+				</div>
+			</div>
 	</div>
-	<div class="pre-contact">
 	
-	</div>
-</div>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/modernizr.js"></script>
-<script src="js/custom.js"></script>
-</div>
 </body>
-<script src="js/languages.js"></script>
 </html>
