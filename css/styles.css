@@ -1,0 +1,246 @@
+@font-face {
+	font-family: 'proximaB';
+	src: url('fonts/ProximaNova-Bold.eot?') format('eot'), 
+	     url('fonts/ProximaNova-Bold.otf')  format('opentype'),
+	     url('fonts/ProximaNova-Bold.woff') format('woff'), 
+	     url('fonts/ProximaNova-Bold.ttf')  format('truetype'),
+	     url('fonts/ProximaNova-Bold.svg#ProximaNova-Bold') format('svg');
+}
+body {
+	font-family: proximaB, sans-serif!important;
+	background-size: cover auto;
+	padding: 0;
+	margin: 0;
+	animation: bodyfadein 2s ease-out 1;
+}
+#wholebodyimage {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+#wholebodyimage:before {
+	content:"";
+	background: url(../images/bg3.jpg) fixed no-repeat bottom;
+	background-size: cover;
+	animation: imageload 2s ease-out 1;
+	position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+	z-index: -2;
+}
+@keyframes imageload {
+	0% {opacity: 0; transform: translateY(-4rem); transform: scale(1.5, 1.5)}
+	50% {opacity: 0; transform: translateY(-4rem); transform: scale(1.5, 1.5)}
+	100% {opacity: 1; transform: none;}
+}
+body:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url("../images/dot.png") repeat;
+	z-index: -1;
+	animation: imageload 3s ease-out 1;
+}
+p, h2 {
+	padding: 0!important;
+	margin-block-start: 0!important;
+	margin-block-end: 0!important;
+}
+.navbar {
+	border-radius: 0;
+	background-color: rgba(0,0,0,0.7)!important;
+}
+.main {
+	display: block;
+	margin: auto;
+	text-align: center;
+	padding: 0;
+}
+.a-wrapper {
+	width: 40%;
+}
+.a-blue {
+	color: #2a498d!important;
+}
+.aboutme {
+	position: relative;
+	text-align: center;
+}
+#aboutmeh {
+	height: 100%;
+	font-size: calc(1em + 4vw);
+	writing-mode: vertical-rl;
+	text-orientation: upright;
+	width: 25%;
+}
+#aboutmet {
+	display: inline;
+	font-size: 2vh;
+	position: absolute;
+	top: 50%;
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+	margin-left: -25%;
+}
+.focus-in-contract {
+	animation: focus-in-contract 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+.pre-work {
+	height: 500px;
+	background: url(../images/bg2.jpg) top fixed no-repeat;
+	background-size: cover;
+	position: relative;
+}
+.pre-work:before {
+    content: "";
+    position: absolute;
+    width: 200%;
+    height: 100%;
+	left: -50%;
+    background: url("../images/dot.png") repeat;
+}
+.work {
+	position: relative;
+	width: 100%;
+	margin: auto;
+	min-height: 100%;	
+}
+.skills {
+	color: white;
+	height: 200px;
+	text-align: center;
+	margin-top: 10%;
+}
+#skill {
+	padding-top: 30px!important;
+	margin-bottom: -60px!important;
+}
+.progressbar-wrapper {
+	margin: auto;
+    width: 300px;
+    height: 60px;
+    top: 50%;
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+.progressbar {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transform: rotateX(-20deg) rotateY(-30deg);
+}
+.side {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(254, 254, 254, 0.1);
+    top: 0;
+    left: 0;
+    position: absolute;
+    transform: rotateX(180deg);
+}
+.bottom {
+    box-shadow: 10px 10px 50px 5px rgba(90, 90, 90, 0.7);
+    transform: rotateX(90deg);
+    transform-origin: bottom;
+}
+.top {
+    transform: translate(0, -100%) rotateX(90deg);
+    transform-origin: bottom;
+	animation: barfill-top 1s ease-out;
+}
+.back {
+    transform: translateZ(-60px);
+	animation: barfill-back 1s ease-out;
+}
+.left {
+    width: 60px;
+    transform: rotateY(90deg);
+    transform-origin: left;
+	animation: barfill-left 1s ease-out;
+}
+.front {
+	animation: barfill-front 1s ease-out;
+}
+.bar {
+    height: 100%;
+	width: 33%;
+	margin-left: 0.16%;
+	margin-right: 0.16%;
+	float: left;
+	text-align: center;
+	padding-top: 10px;
+	border: 1px solid rgba(255,255,255,1);
+}
+@keyframes barfill-left {
+	0%{height: 0}
+	100%{height: 100%}
+}
+@keyframes barfill-back {
+	0%{opacity: 0}
+}
+@keyframes barfill-top {
+	0%{opacity: 0}
+}
+@keyframes barfill-front {
+	0%{opacity: 0}
+}
+.skillnamelevel {
+    transform-style: preserve-3d;
+    transform: rotateX(-20deg) rotateY(-30deg);
+	width: 100%!important;
+	text-transform: uppercase;
+	box-shadow: none!important;
+	border-radius: 0px 0px 20px 20px;
+	border: 1px solid rgba(255,255,255,1);
+}
+.skillname {
+    transform-style: preserve-3d;
+    transform: rotateX(-20deg) rotateY(-30deg) translateZ(-60px);
+	width: 100%!important;
+	text-transform: uppercase;
+	box-shadow: none!important;
+	margin-top: -10%;
+	border-radius: 20px 20px 0px 0px;
+	border: 1px solid rgba(255,255,255,1);
+}
+.frontend {
+    background-color: rgba(76, 175, 80, 0.8);
+    box-shadow: 5px 5px 50px 5px rgba(76, 175, 80, 0.3);
+}
+.backend {
+    background-color: rgba(185, 158, 84, 0.8);
+    box-shadow: 5px 5px 50px 5px rgba(185, 158, 84, 0.3);
+}
+.photoshop {
+    background-color: rgba(119, 145, 252, 0.8);
+    box-shadow: 5px 5px 50px 5px rgba(119, 145, 252, 0.3);
+}
+.postproduction {
+    background-color: rgba(163, 64, 64, 0.8);
+    box-shadow: 5px 5px 50px 5px rgba(163, 64, 64, 0.3);
+}
+.pre-contact {
+	height: 500px;
+	background: url(../images/bg1.jpg) top fixed no-repeat;
+	background-size: cover;
+	position: relative;
+}
+p.container {
+	line-height: 3!important;
+}
+@media (max-width: 800px)
+{
+	.skills .w3-col {padding-top: 50%; padding-left: 0;}
+	.skills {height: 950px; margin-left: -10%;}
+	#wholebodyimage:before {background-position: top; background-size: 100% auto;}
+	.logo{height: 100%}
+	#aboutmeh {font-size: calc(1em + 1vw); width: 100%; position: relative; writing-mode: horizontal-tb;font-size: 80%:}
+	#aboutmet {font-size: 2vh; position: relative; margin-left: 0;font-size: 80%:}
+	.aboutme .w3-half {width: 100%; float: none!important;}
+	.pre-work {height: 300px;background-position: 78% center; background-size: cover;}
+	.pre-contact {height: 300px;background-position: -250px center; background-size: cover;}
+	
+}
