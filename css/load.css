@@ -80,7 +80,7 @@ body:before {
 	font-size: 20px;
 	margin: auto;
 	filter: blur(20px);
-	color: #fbffda;
+	color: #fff;
 	margin-top: 100px;
 	opacity: 0;
 	text-shadow: 2px 2px 2px black;
@@ -125,11 +125,11 @@ body:before {
 	display: inline-block;
 	font-size: 30px;
 	padding-left: initial;
-	color: #fbffda;
-	background-color: black;
+	color: black;
+	background-color: #fff;
 	line-height: initial;
 	border-radius: 0 0 9999px 9999px;
-	text-shadow: 2px 2px 2px black;
+	text-shadow: none;
 	box-shadow: 5px 5px 5px black;
 }
 .navbar {
@@ -220,7 +220,7 @@ body:before {
 	padding: 40px 10px;
 	background-color: rgba(0,0,0,0.4);
 	box-shadow: 2px 2px 2px black;
-	color: #fbffda;
+	color: #fff;
 	line-height: 5;
 }
 .card p {
