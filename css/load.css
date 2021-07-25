@@ -113,7 +113,7 @@ body:before {
 	line-height: 0.3;
 	font-size: 10em;
 	padding-left: 30px;
-	color: #ff3c38;
+	color: #7ed8f2;
 	animation: nameSlide 4s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1;
 }
 @keyframes nameSlide {
@@ -125,11 +125,11 @@ body:before {
 	display: inline-block;
 	font-size: 30px;
 	padding-left: initial;
-	color: #fbffda;
-	background-color: black;
+	color: black;
+	background-color: #fff;
 	line-height: initial;
 	border-radius: 0 0 9999px 9999px;
-	text-shadow: 2px 2px 2px black;
+	text-shadow: none;
 	box-shadow: 5px 5px 5px black;
 }
 .navbar {
