@@ -12,6 +12,25 @@ body:before {
     background: url("../images/dot.png") repeat;
 	z-index: -1;
 }
+.fp-viewing-0 .main {
+	opacity: 1;
+	transition: 1s;
+}
+.fp-viewing-1 .main {
+	transition: 0.25s ease-out;
+	filter: blur(50px);
+	opacity: 0;
+}
+/*.fp-viewing-1 .avatar {
+	width: 50px;
+	border: 2px solid #7ed8f2;
+}
+.fp-viewing-1 .name {
+	font-size: 50px;
+}
+.fp-viewing-1 .description {
+	display: none;
+}*/
 .main {
 	text-align: center;
 	width: 100%;
@@ -40,6 +59,22 @@ body:before {
 	letter-spacing: 100px;
 	filter: blur(50px);
 }
+.fp-viewing-1 .aboutheader {
+	letter-spacing: initial;
+	filter: blur(0px);
+	transition: 1s ease-out;
+}
+.fp-viewing-0 .aboutheader, .fp-viewing-2 .aboutheader {
+	transition: 1s;
+}
+.fp-viewing-2 .whatidoheader {
+	letter-spacing: initial;
+	filter: blur(0px);
+	transition: 1s ease-out;
+}
+.fp-viewing-1 .whatidoheader {
+	transition: 1s;
+}
 .abouttext {
 	width: 30%;
 	font-size: 20px;
@@ -49,6 +84,18 @@ body:before {
 	margin-top: 100px;
 	opacity: 0;
 	text-shadow: 2px 2px 2px black;
+}
+.fp-viewing-1 .abouttext {
+	margin-top: initial;
+	filter: blur(0);
+	opacity: 1;
+	transition: 1s ease-out;
+}
+.fp-viewing-0 .abouttext, .fp-viewing-2 .abouttext {
+	transition: 1s;
+}
+@keyframes mainSlide {
+	0% {margin-left: 100%;opacity: 0;}
 }
 .avatar {
 	border-radius: 99999px;
@@ -78,11 +125,11 @@ body:before {
 	display: inline-block;
 	font-size: 30px;
 	padding-left: initial;
-	color: black;
-	background-color: #fff;
+	color: #fbffda;
+	background-color: black;
 	line-height: initial;
 	border-radius: 0 0 9999px 9999px;
-	text-shadow: none;
+	text-shadow: 2px 2px 2px black;
 	box-shadow: 5px 5px 5px black;
 }
 .navbar {
@@ -116,6 +163,58 @@ body:before {
 	opacity: 0;
 	color: #7ed8f2;
 	vertical-align: middle;
+}
+/* ------------------------------------------------------------------------ */
+.fp-viewing-0 .navavatar, .fp-viewing-2 .navavatar {
+	opacity: 0;
+	transition: 3s;
+}
+.fp-viewing-0 .navname, .fp-viewing-2 .navname {
+	opacity: 0;
+	transition: 3s;
+}
+.fp-viewing-1 .navavatar {
+	opacity: 1;
+	transition: 3s;
+}
+.fp-viewing-1 .navname {
+	opacity: 1;
+	transition: 3s;
+}
+.fp-viewing-1 .navbar {
+	left: 0;
+	width: 100%;
+	background-color: rgba(0,0,0,0.4);
+	transition: 1s;
+}
+.fp-viewing-0 .navbar, .fp-viewing-2 .navbar {
+	transition: 0.25s;
+}
+/* ------------------------------------------------------------------------ */
+.fp-viewing-1 .navavatar1 {
+	opacity: 0;
+	transition: 3s;
+}
+.fp-viewing-1 .navname1 {
+	opacity: 0;
+	transition: 3s;
+}
+.fp-viewing-2 .navavatar1 {
+	opacity: 1;
+	transition: 3s;
+}
+.fp-viewing-2 .navname1 {
+	opacity: 1;
+	transition: 3s;
+}
+.fp-viewing-2 .navbar1 {
+	right: 0;
+	width: 100%;
+	background-color: rgba(0,0,0,0.4);
+	transition: 1s;
+}
+.fp-viewing-1 .navbar1 {
+	transition: 0.25s;
 }
 .card {
 	padding: 40px 10px;
