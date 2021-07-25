@@ -106,7 +106,7 @@ body:before {
 .navavatar, .navavatar1 {
 	width: 75px;
 	border-radius: 9999px;
-	border: 2px solid #7ed8f2;
+	border: 2px solid #fff;
 	box-shadow: 2px 2px 2px black;
 	opacity: 0;
 }
